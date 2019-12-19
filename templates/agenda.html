@@ -1,0 +1,11 @@
+   {% extends 'model_page.html' %}
+   
+   {% block content %}
+        <ul>
+            {% for evento in eventos %}
+                <li>
+                    <h3>{{ evento }} - {{ evento.descricao }} {{evento.get_data_evento}}</h3>
+                </li>
+            {% endfor %}
+        </ul>
+   {% endblock  %}
